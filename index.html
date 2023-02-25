@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed Navbar and Sidebar Example</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+            <span><img src="./icons/stak_logo.svg" alt="Stakwork logo" ></span>
+			<div class="navbar-nav">
+				<div class="nav-item nav-search">
+                    <span class="nav-link" href="#"><img src="./icons/search.svg" alt="search icon"></span>
+                </div>
+				<div class="nav-item nav-balance">
+                    <span><img src="./icons/wallet_icon.svg" alt=""></span>
+                    <span>8 425 152 SAT</span>
+                    <span>0 USD</span>
+                    <span><button class="btn-s btn-outline-green">Add Funds</button></span>
+                </div>
+				<div class="nav-item nav-user">
+                    <span>
+                        <img src="./icons/profile_pic.png" alt="profile picture">
+                    </span>
+                    <span>Jonathan Smith</span>
+                    <span><select name="profile_pic" id="profile_pic"></select></span>
+                </div>
+			</div>
+		</nav>
+	</header>
 
+	<main>
+		<aside class="sidebar">
+			<ul class="sidebar-nav">
+				<li class="sidebar-item"><a class="sidebar-link" href="#">Accounts</a></li>
+				<li class="sidebar-item sidebar-header"><a class="sidebar-link" href="#">Projects</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">Skills</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">Jobs</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">API</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">Tutorials</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">Job Tips</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">Translations</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">Settings</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">Split Videos</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">Blazer</a></li>
+			</ul>
+		</aside>
+
+		<section class="main-section">
+            <header >
+                <nav class="header-content">
+                    <span>Profile</span>
+                    <div class="navbar-nav">
+                        <button class="btn-m btn-green">Save</button>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="content-cards">
+                <div class="card user">
+                    <div class="img-container">
+                        <div class="img-frame">
+                            <img class="user-img" src="./icons/user_image.png" alt="">
+                        </div>
+                        <span class="camera">
+                            <img src="./icons/camera.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="user-name centered">
+                        <h3>Jonathan Smith</h3>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-m btn-outline-grey centered">Reset Password</button>
+                        <button class="btn-m btn-outline-grey centered">RSS Feeds</button>
+                    </div>
+                </div>
+
+                <div class="card settings">
+                    <h3 class="heading w-292">Settings</h3>
+                    <hr>
+                    <div class="w-292">
+                        <h5>Service Type:</h5>
+                        <p>Type of service required for customers, ie: Transcription Service. Used to filter what Customer wants to sign up for.</p>
+                    </div>
+                    <select name="service" id="service" class="btn-m btn-outline-grey w-292">
+                        <option value="item1">Transcription Service</option>
+                        <option value="item2">Translation Service</option>
+                        <option value="item3">Annotation Service</option>
+                        <option value="item4">Programming Service</option>
+                    </select>
+                    <div class="w-292">
+                        <h5>Project Error Notifications:</h5>
+                        <p>Enable / disable project error notifications via email</p>
+                    </div>
+                    <div class="w-292">
+                        <h3>Disabled</h3>
+                        <span class="switch"></span>
+                        <!-- bottom border solid -->
+                    </div>
+                    <h5 class="w-292">Job Assignment:</h5>
+                    <div class="w-292">
+                        <h3>Enabled</h3>
+                        <span class="switch"></span>
+                        <!-- bottom border solid -->
+                    </div>
+                </div>
+
+                <div class="card balance">
+                    <h3 class="heading w-292">Balance</h3>
+                    <hr>
+                    <span>8 425 152</span><span>SATS</span>
+                    <span>25,052.597</span><span>USD</span>
+                    <button class="btn-m btn-green w-292 centered">Add Funds</button>
+                    <h5 class="w-292">Auto-Pay:</h5>
+                    <div class="w-292">
+                        <h3 >Disabled</h3>
+                        <span class="switch"></span>
+                        <!-- bottom border solid -->
+                    </div>
+                </div>
+            </div>
+
+
+		</section>
+	</main>
+
+
+</body>
+</html>
